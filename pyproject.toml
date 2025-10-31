@@ -1,0 +1,7 @@
+[project]
+name = "led_animation_helper"
+description = "small helper library for pre-selected and custom animations"
+version = "0.0.0+auto.0"
+
+[tools.setup]
+packages = ["led_animation_helper"]

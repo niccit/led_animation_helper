@@ -11,7 +11,7 @@ from adafruit_led_animation.animation.sparkle import Sparkle
 from adafruit_led_animation.animation.rainbowsparkle import RainbowSparkle
 from adafruit_led_animation.animation.rainbowchase import RainbowChase
 from adafruit_led_animation.animation.rainbowcomet import RainbowComet
-from breathe import BreatheAnimation
+from BreatheAnimation import BreatheAnimation
 
 
 # Single class containing a subset of the available LED animations from the CircuitPython LED Animation library

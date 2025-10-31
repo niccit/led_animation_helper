@@ -11,7 +11,7 @@ from adafruit_led_animation.animation.sparkle import Sparkle
 from adafruit_led_animation.animation.rainbowsparkle import RainbowSparkle
 from adafruit_led_animation.animation.rainbowchase import RainbowChase
 from adafruit_led_animation.animation.rainbowcomet import RainbowComet
-from BreatheAnimation import BreatheAnimation
+import BreatheAnimation
 
 
 # Single class containing a subset of the available LED animations from the CircuitPython LED Animation library
@@ -26,7 +26,7 @@ def build_animation(pixels, data, color):
         else:
             obj = Sparkle(pixels, data['speed'], color, data['sparkles'])
     if "breathe" in data['name']:
-            obj = BreatheAnimation(pixels, data['speed'], color, data['rate'], data['step'], data['count'])
+            obj = BreatheAnimation.BreatheAnimation(pixels, data['speed'], color, data['rate'], data['step'], data['count'])
     if "chase" in data['name']:
         if "rainbow" in data['name']:
             obj = RainbowChase(pixels, data['speed'], data['size'], data['spacing'], True)
